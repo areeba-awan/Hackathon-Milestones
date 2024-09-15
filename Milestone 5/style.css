@@ -1,0 +1,148 @@
+
+.container{
+  width:80vh;
+  height: 140vh;
+  margin-bottom: 10px;
+  padding:20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  border:solid;
+  border-color: rgb(231, 129, 21);
+  box-shadow: 0 0 5px rgb(59, 59, 59);
+  background-color: rgb(172, 249, 190);
+  font-size: large;
+  
+}
+
+h1{
+
+display: flex; 
+align-items: center;
+flex-direction: column;
+}
+
+input{
+width:70vh;
+height:3vh;
+
+}
+
+body{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-image:url('bgimage.jpg') ; 
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:cover;   
+}
+fieldset {
+  width: 70%;
+  height:fit-content;
+  border: 2px solid #1c1a1a;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 8px 0;
+  width:70vh;
+  color:#433b3b;
+  font-size: large;
+
+}
+legend {
+  font-size: x-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding:10px;
+    text-align: center;
+}
+
+textarea{
+
+  width:70vh;
+  height:5vh;
+}
+
+#functionalbtn{
+  display: flex;
+  flex-direction:row;
+  width:70%;
+  justify-content: space-between;
+  
+}
+
+#create-resume{
+  padding:5px;
+  width:8rem;
+  height:2.5rem;
+  border-radius: 5px;
+  border:none;
+  margin: 5px 0 8px;
+  font-size: medium;
+  background-color: rgb(228, 72, 15);
+  color:aliceblue;
+}
+
+#create-resume:hover{
+  cursor: pointer;
+  transition: all .80s;
+  background-color: rgba(219, 98, 54, 0.97);
+  color: black;
+}
+#downloadbtn{
+  padding:8px;
+  width:8rem;
+  height:2.5rem;
+  border-radius: 5px;
+  border:none;
+  margin: 5px 0 8px;
+  font-size: medium;
+  background-color: rgb(228, 72, 15);
+  color:aliceblue;
+}
+
+#downloadbtn:hover{
+  cursor: pointer;
+  transition: all .80s;
+  background-color: rgba(219, 98, 54, 0.97);
+  color: black;
+}
+
+#share-btn{
+  padding:8px;
+  width:8rem;
+  height:2.5rem;
+  border-radius: 5px;
+  border:none;
+  margin: 5px 0 8px;
+  font-size: medium;
+  background-color: rgb(228, 15, 210);
+  color:aliceblue;
+}
+
+#share-btn:hover{
+  cursor: pointer;
+  transition: all .80s;
+  background-color: rgba(51, 143, 228, 0.97);
+  color: black;
+}
+#resumeoutput{
+
+  width:80vh;
+  height: auto;
+  margin-bottom: 10px;
+  padding:20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  border:solid;
+  border-color: rgb(168, 231, 21);
+  box-shadow: 0 0 5px rgb(37, 35, 35);
+  background-color: rgb(205, 200, 200);
+  font-size: large;
+}
+

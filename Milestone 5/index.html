@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloadable-Resume</title>
+    <link href="style.css" rel="stylesheet">
+   
+</head>
+<body>
+    <form id="dynamic-resume">
+
+        <div>
+            <!-- Personal Information -->
+            
+            <div class="container">
+                <h1>Shareable Resume Builder<br> <i>created by AREEBA AWAN</i></h1>
+            <div class="personal-info">
+            
+                <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Name" contenteditable="true"/>
+            
+                <br/><br/>
+            
+                <!-- Contact Information -->
+            
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" contenteditable="true" />
+                <br /><br/>
+                <label for="contact-number">Contact No:</label>
+                <input
+                    type="text" id="contact"
+                    name="contact-number"
+                    pattern="+92-[0-9]{3}-[0-9]{7}"
+                    placeholder="+92-333-1234567" maxlength="15" contenteditable="true"/>
+                <br><br>
+                
+                <label for="url">Linkedin </label><br>
+                <input type="url"id="url" name="website" contenteditable="true"/>
+                <br><br>
+
+                <label for="url">Username for Url:</label><br>
+                <input type="text" id="user_url" placeholder="username" contenteditable="true">
+            
+            </fieldset>
+                
+            </div>
+            
+            <div class="Education">  
+            
+            <fieldset>
+            <legend>Education</legend>
+              
+            <label for="education"></label>
+            
+                <textarea id="education" name="education" contenteditable="true"></textarea>
+            </fieldset>
+          
+            </div>
+            
+            <div class="Skills">
+            
+            <fieldset>
+            <legend>Skills</legend>
+            
+            <label for="skills"></label>
+                <textarea id="skills" name="skills" contenteditable="true"></textarea>
+                </fieldset>
+            </div>
+        
+            <div class="Experience">  
+            
+            <fieldset>
+            <legend>Work Experience</legend>
+                    
+            <label for="experience"></label>
+                        
+            <textarea id="experience" name="experience" contenteditable="true"></textarea>
+                       
+            </fieldset>
+            </div>
+        
+            <div id="functionalbtn">
+
+            <button type="submit" id="create-resume">Generate CV</button>
+            <button type="submit" id="downloadbtn">Download PDF</button>
+            <button id="share-btn">Share Link</button>
+            </div>
+         
+        </div>
+        </form>
+        
+        <!-- <h2>Your Resume: <output id="your_resume"></output></h2> -->
+        <div id="resumeoutput">
+            <div id="resume-preview"></div>
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
